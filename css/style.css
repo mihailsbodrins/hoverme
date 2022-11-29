@@ -207,5 +207,20 @@ body {
 }
 
 .description:hover {
-  box-shadow: -16px 0 7px 0 #00F8F8, 16px 0 7px 0 #FF7400;
+  animation: shadow 4s ease-out  infinite;
+  /* box-shadow: -16px 10px 7px 0 #00F8F8, 16px -10px 7px 0 #FF7400; */
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: -16px 0 7px 0 #00F8F8, 16px 0 7px 0 #FF7400;
+  }
+
+  50% {
+    box-shadow: -16px 10px 7px 0 #00F8F8, 16px -10px 7px 0 #FF7400;
+  }
+
+  100% {
+    box-shadow: -16px -10px 7px 0 #00F8F8, 16px 10px 7px 0 #FF7400;
+  }
 }
